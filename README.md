@@ -10,7 +10,7 @@ and improving decision-making.
 
 ---
 
-# Key Features
+## Key Features
 
 ### 1. User Profile Setup
 - Login & Signup:
@@ -37,7 +37,7 @@ and improving decision-making.
 
 ---
 
-# Technology Stack
+## Technology Stack
 
 ### Frontend:
 - HTML, CSS, JavaScript
