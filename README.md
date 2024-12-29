@@ -53,5 +53,6 @@ and improving decision-making.
 - Figma for UI/UX design.
 
 "SIMIGRA: Simplify. Settle. Succeed."
+<br>
 Thank you for using SIMIGRA! Your journey made simple.
 
