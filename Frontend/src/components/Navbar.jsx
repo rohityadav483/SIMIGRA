@@ -1,5 +1,5 @@
 import { navItems } from "../constants";
-// import logo from "../assets/logo.png"; Logo needs to be added later
+import logo from "../assets/Logo.jpg"; 
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
         
         {/* Logo and Name  */}
           <div className="flex items-center flex-shrink-0">
-            <img className="h-10 w-10 mr-2" src="{logo}" alt="Logo" />
+            <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
             <span className="text-xl tracking-tight">Simigra</span>
           </div>
 
