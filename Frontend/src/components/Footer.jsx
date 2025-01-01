@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
 
     {/* Lisense  */}
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center m-5">
           <p>SIMIGRA @ 2024</p>
           <p>All rights reserved. | <u>Privacy Policy</u> | <u>Terms of Service</u></p>
       </div>
