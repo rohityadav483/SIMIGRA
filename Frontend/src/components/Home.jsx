@@ -25,7 +25,7 @@ const Home = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
-          className="bg-gradient-to-r from-violet-600 to-blue-500 py-3 px-4 mx-3 rounded-lg">
+          className="bg-gradient-to-r from-violet-600 to-blue-500 py-3 px-4 mx-3 rounded-full hover:bg-blend-darken">
           Get Started
         </a>
       </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 bg-black">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
         
@@ -26,7 +26,7 @@ const Navbar = () => {
         {/* All other Links  */}
           <ul className="hidden lg:flex ml-14 space-x-8">
             {navItems.map((item, index) => (
-              <li key={index} className="hover:underline hover:font-bold">
+              <li key={index} className="hover:underline hover:font-bold hover:text-blue-600">
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
@@ -34,11 +34,11 @@ const Navbar = () => {
         
         {/* Login and SignUp buttons */}
           <div className="hidden lg:flex justify-center space-x-8 items-center">
-            <a href="#" className="py-1.5 px-3 border rounded-md bg-white text-black 
+            <a href="#" className="py-1.5 px-3 border rounded-full bg-white text-black 
               hover:underline hover:font-semibold">
                Login
             </a>
-            <a href="#" className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-md 
+            <a href="#" className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-full 
               hover:underline hover:font-semibold">
               SignUp
             </a>
@@ -63,13 +63,12 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6 mt-3">
-              <a href="#" className="py-1.5 px-3 border rounded-md bg-white text-black
+              <a href="#" className="py-1.5 px-3 border rounded-full bg-white text-black
                 hover:underline hover:font-semibold">
                 Login
-              </a>
-              <a
-                href="#"
-                className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-md
+              </a>             
+              <a href="#"
+                className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-full
                 hover:underline hover:font-semibold">
                 SignUp
               </a>
