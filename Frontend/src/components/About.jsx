@@ -2,7 +2,7 @@
 const About = () => {
 
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div id="About" className="relative mt-20 flex flex-col items-center max-w-7xl mx-auto pt-20 px-6">
         {/* Header  */}
       <h1 className="text-3xl sm:text-xl lg:text-5xl text-center tracking-wide font-bold underline">
         About

@@ -3,7 +3,7 @@ import { feature } from "../constants";
 
 const Features = () => {
   return (
-    <div className="relative mt-20 border-neutral-800 min-h-[800px]">
+    <div id="Features" className="relative mt-20 border-neutral-800 min-h-[800px] max-w-7xl mx-auto pt-20 px-6">
         {/* Header  */}
       <div className="text-center">
         <h1 className="text-3xl sm:text-xl lg:text-4xl text-center tracking-wide font-bold underline">

@@ -2,7 +2,7 @@ import { QuickLinks, Contacts, FollowUs } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t py-10 border-neutral-700">
+    <footer id="Contacts" className="mt-20 border-t py-10 border-neutral-700">
 
     {/* Resoure Links  */}
       <div className="flex flex-cols-2 lg:flex-cols-3 gap-4 justify-around">

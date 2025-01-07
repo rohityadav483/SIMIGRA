@@ -9,10 +9,10 @@ import { Languages } from "lucide-react";
 
 // Navbar Items 
 export const navItems = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Features", href: "#" },
-  { label: "Contacts", href: "#" },
+  { label: "Home", href: "#Home" },
+  { label: "About", href: "#About" },
+  { label: "Features", href: "#Features" },
+  { label: "Contacts", href: "#Contacts" },
 ];
 
 // Why Choose Simigra

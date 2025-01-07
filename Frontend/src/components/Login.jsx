@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 import { LockKeyhole } from "lucide-react";
 
@@ -7,7 +9,7 @@ const Login = () => {
     <div className="w-full flex justify-center items-center lg:h-screen bg-gray-800 overflow-hidden">
       
         {/* Login Section */}
-        <div className="w-full lg:w-2/5 px-4">
+        <div className="w-full lg:w-2/5 px-4 m-4">
           <div className="px-6 lg:px-20 py-12 lg:py-20 bg-gray-600 rounded-lg text-gray-800">
             <form action="#">
               <h3 className="mb-10 text-3xl text-white font-bold font-heading text-center">User Login</h3>
@@ -38,7 +40,7 @@ const Login = () => {
                  Login    
               </button>
               <p className="mt-4 text-lg text-gray-200 text-center">Not a member?
-                <a className="hover:underline hover:text-blue-800" href="#" > SignUp</a>
+                <Link to="/register" className="text-blue-900 hover:underline hover:text-violet-900"> SignUp</Link>
               </p>    
             </form>
           </div>

@@ -1,9 +1,10 @@
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div id="Home" className="mt-20 flex flex-col items-center max-w-7xl mx-auto pt-20 px-6">
       {/* Welcome Header  */}
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide font-bold">
         Welcome to
@@ -23,11 +24,12 @@ const Home = () => {
 
       {/* Get Started button  */}
       <div className="flex justify-center my-10">
-        <a
+        <Link to="/register"
           href="#"
-          className="bg-gradient-to-r from-violet-600 to-blue-500 py-3 px-4 mx-3 rounded-full hover:bg-blend-darken">
+          className="bg-gradient-to-r from-violet-600 to-blue-500 py-3 px-4 mx-3 rounded-full 
+          hover:bg-gradient-to-r hover:from-violet-950 hover:to-blue-900">
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );

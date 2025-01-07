@@ -3,7 +3,7 @@ import { whyData } from "../constants";
 const Section = () => {
 
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="flex flex-col items-center mt-6 lg:mt-20 max-w-7xl mx-auto pt-20 px-6">
         {/* Header  */}
       <div className="text-center"></div>  
         <h1 className="text-3xl sm:text-xl lg:text-4xl text-center tracking-wide font-bold underline">

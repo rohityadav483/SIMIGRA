@@ -1,7 +1,9 @@
+import React from "react";
 import { navItems } from "../constants";
 import logo from "../assets/Logo.jpg"; 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -13,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 bg-black">
+    <div className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-600">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
         
@@ -26,7 +28,7 @@ const Navbar = () => {
         {/* All other Links  */}
           <ul className="hidden lg:flex ml-14 space-x-8">
             {navItems.map((item, index) => (
-              <li key={index} className="hover:underline hover:font-bold hover:text-blue-600">
+              <li key={index} className="hover:underline hover:text-blue-600">
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
@@ -34,16 +36,16 @@ const Navbar = () => {
         
         {/* Login and SignUp buttons */}
           <div className="hidden lg:flex justify-center space-x-8 items-center">
-            <a href="#" className="py-1.5 px-3 border rounded-full bg-white text-black 
-              hover:underline hover:font-semibold">
+            <Link to="/login" className="py-1.5 px-3 border rounded-full bg-white text-black 
+              hover:bg-black hover:text-white">
                Login
-            </a>
-            <a href="#" className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-full 
-              hover:underline hover:font-semibold">
-              SignUp
-            </a>
+            </Link>
+            <Link to="/register" className="bg-gradient-to-r from-violet-600 to-blue-500 py-2 px-3 rounded-full
+              hover:bg-gradient-to-r hover:from-violet-950 hover:to-blue-900">
+               SignUp
+            </Link>
           </div>
-        
+      
         {/* Toggle Navbar For Mobile Screen  */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
@@ -57,26 +59,25 @@ const Navbar = () => {
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4 hover:underline hover:font-bold">
+                <li key={index} className="py-4 hover:underline hover:text-blue-600">
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
             <div className="flex space-x-6 mt-3">
-              <a href="#" className="py-1.5 px-3 border rounded-full bg-white text-black
-                hover:underline hover:font-semibold">
+              <Link to="/login" className="py-1.5 px-3 border rounded-full bg-white text-black
+                hover:bg-black hover:text-white">
                 Login
-              </a>             
-              <a href="#"
-                className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-full
-                hover:underline hover:font-semibold">
+              </Link>             
+              <Link to="/register" className="bg-gradient-to-r from-violet-600 to-blue-500 py-1.5 px-3 rounded-full
+                hover:bg-gradient-to-r hover:from-violet-950 hover:to-blue-900">
                 SignUp
-              </a>
+              </Link>
             </div>
           </div>
         )}     
       </div>
-    </nav>
+    </div>
   );
 };
 

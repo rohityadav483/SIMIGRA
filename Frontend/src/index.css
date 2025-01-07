@@ -7,5 +7,10 @@
 :root {
   font-family: "Inknut Antiqua", serif;
   color-scheme: dark;
-    background-color: #001219;
+    /* background-color: #001219; */
+    background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }

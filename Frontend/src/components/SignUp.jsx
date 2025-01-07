@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { User } from "lucide-react";
 import { LockKeyhole } from "lucide-react";
 import { Mail } from "lucide-react";
@@ -22,7 +24,7 @@ const Register = () => {
         </div>
         
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 px-4">
+        <div className="w-full lg:w-1/2 px-4 mb-4">
           <div className="px-6 lg:px-20 py-12 lg:py-16 bg-gray-600 rounded-lg text-gray-800">
             <form action="#">
               <h3 className="mb-10 text-2xl text-white font-bold font-heading text-center">Register Account</h3>
@@ -61,7 +63,7 @@ const Register = () => {
                 Get started
               </button>
               <p className="mt-4 text-lg text-gray-200 text-center">Already have an account?
-                <a className="hover:underline hover:text-blue-800" href="#" > Login</a>
+                <Link to="/login" className="text-blue-900 hover:underline hover:text-violet-900"> Login</Link>
               </p>                
             </form>
           </div>
