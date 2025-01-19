@@ -7,7 +7,7 @@ const Dashboard = () => {
 return (
   
 <body class="relative bg-black overflow-hidden max-h-screen">
-  {/* Header Navbar  */}
+  {/* Header Navbar */}
   <Header />
   
   {/* Dashboard Section  */}
