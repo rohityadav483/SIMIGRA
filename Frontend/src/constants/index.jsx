@@ -6,6 +6,12 @@ import { UtensilsCrossed } from "lucide-react";
 import { Plane } from "lucide-react";
 import { Languages } from "lucide-react";
 
+// Animations 
+import animation1 from "../animations/Travel.json";
+import animation2 from "../animations/Food.json";
+import animation3 from "../animations/Home.json";
+import animation4 from "../animations/Cultural.json";
+import animation5 from "../animations/Jobs.json";
 
 // Navbar Items 
 export const navItems = [
@@ -97,3 +103,50 @@ export const FollowUs = [
   { href: "#", text: "LinkedIn" },
 ];
 
+
+// Sidebar options 
+export const SidebarData = [
+  {title: "Dashboard", icon: <Languages/>,},
+  {title: "Travel", icon: <Languages/>},
+  {title: "Food", icon: <Languages/>},
+  {title: "Cultural", icon: <Languages/>},
+  {title: "Accomodation", icon: <Languages/>},
+]
+
+// Dashboard options 
+export const DashboardData = [
+  {
+    title: "Travel Assistance",
+    description:
+      "Find local eateries, restaurants, and tiffin services near your destination. Explore affordable dining options that cater to your tastes and dietary preferences. View monthly meal plans and budget-friendly food services to ensure a seamless culinary experience in your new city.",
+    button: "Plan Your Commute",
+    animation: animation1,
+  },
+  {
+    title: "Food Assistance",
+    description:
+      "Compare various modes of transportation, such as buses, taxis, rickshaws, and more. Get insights into costs, routes, and convenience to make informed decisions about your daily commute and travel within the city. Simplify navigation and save time with clear travel options.",
+    button: "Discover Local Eats",
+    animation: animation2,
+  },
+  {
+    title: "Accomodation Finder",
+    description:
+      "Discover a wide range of housing options tailored to your budget and preferences. Whether you’re looking for shared apartments, single rooms, or family homes, explore verified listings in your destination. Filter through available accommodations and choose a place that feels like home in your new location.",
+    button: "Explore Housing Options",
+    animation: animation3,
+  },
+  {
+    title: "Cultural Adaptation Assistance",
+    description:
+      "Navigate your new environment effortlessly with resources for cultural integration. Learn the local language with easy-to-use tools, understand customs and traditions, and gain insights into social norms. Feel confident and connected as you settle into your new community.",
+    button: "Learn & Adapt",
+    animation: animation4,
+  },  {
+    title: "Custom Job Listings",
+    description:
+      "Access a curated list of job opportunities tailored to your skills, qualifications, and destination. Filter job listings by industry, location, and job type to find the perfect match for your career goals. Simplify your job search with personalized recommendations designed to help you start your new journey with confidence.",
+    button: "Find Jobs Near Me",
+    animation: animation5,
+  },
+];

@@ -9,7 +9,7 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-
+import Dashboard from './components/Dashboard';
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           } />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       </BrowserRouter>
     </>
