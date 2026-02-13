@@ -1,58 +1,199 @@
-# SIMIGRA - Migration Support Platform
+# 🚀 SIMIGRA – Migration Support Platform
 
-Overview:-
-SIMIGRA is a comprehensive platform designed to help individuals navigate their migration journey with ease. It acts as a one-stop solution, providing users with resources such as 
-job listings, accommodations, food and travel options, and cultural assistance to help them integrate seamlessly into their new environment.
+**SIMIGRA** is a full-stack web application designed to assist individuals relocating to a new city. The platform consolidates essential migration resources such as jobs, accommodations, food services, transport options, and cultural guidance into one unified system.
 
-Key Problem Solved:-
-Currently, migrants face fragmented resources for jobs, housing, and cultural adaptation. SIMIGRA consolidates all these services into one user-friendly platform, reducing stress 
-and improving decision-making.
+> **SIMIGRA: Simplify. Settle. Succeed.**
 
 ---
 
-## Key Features
+## 📌 Project Purpose
 
-### 1. User Profile Setup
-- Login & Signup:
-  - Secure user authentication via email and password.
-  - Collects destination, educational qualifications, skills, and cultural preferences.
+Relocating to a new city often requires using multiple platforms to gather information about employment, housing, living expenses, and local adaptation. This fragmentation creates confusion and stress.
 
-### 2. Custom Job Listings
-- Displays personalized job opportunities based on the user's skills and qualifications.
-
-### 3. Accommodation Finder
-- Lists housing options for different budgets and localities.
-- Integration with maps to display housing locations.
-
-### 4. Food and Travel Options
-- Provides local eateries and tiffin services with monthly cost estimates.
-- Compares transportation options like rickshaws, taxis, and buses.
-
-### 5. Cultural Adaptation Assistance
-- Offers language learning resources for the local language.
-- Provides guides on local customs, traditions, and social norms.
-
-### 6. Local Community and Support Network
-- Includes community forums to connect users with fellow migrants for advice and networking.
+SIMIGRA solves this problem by providing a **centralized migration assistance platform**.
 
 ---
 
-## Technology Stack
+## ✨ Core Features
 
-### Frontend:
-- HTML, CSS, JavaScript
-- React.js for building user interfaces.
+### 👤 User Management
 
-### Backend:
-- Node.js with Express.js for API and server-side logic.
+- Secure signup & login (email/password authentication)
+- Passwords stored using hashed encryption
+- User profile stores:
+  - Name & email
+  - Destination city
+  - Skills & education
+  - Cultural preferences
+- Users can update profile information
 
-### Database:
-- MongoDB for storing user data, job listings, accommodations, and cultural resources.
+---
 
-### Tools:
-- Figma for UI/UX design.
+### 💼 Job Listings
 
-"SIMIGRA: Simplify. Settle. Succeed."
-<br>
-Thank you for using SIMIGRA! Your journey made simple.
+- City-based job filtering
+- Job details include:
+  - Job title & company
+  - Salary range
+  - Required skills
+  - Job type & description
+  - Posting metadata
 
+---
+
+### 🏠 Accommodation Finder
+
+- Housing options filtered by city
+- Displays:
+  - Property name & type
+  - Price range
+  - Address & contact
+  - Ratings & reviews
+  - Distance from center
+  - Images & descriptions
+
+---
+
+### 🍽 Food & Living Services
+
+- Local food providers / eateries
+- Information includes:
+  - Cuisine types
+  - Pricing details
+  - Ratings & offers
+  - Distance indicators
+  - Images
+
+---
+
+### 🚕 Transport Options
+
+- Compare transport modes by city
+- Data provided:
+  - Base fare
+  - Cost per km
+  - Mode description
+
+---
+
+### 🌏 Cultural Adaptation Resources
+
+- Language information
+- Cultural guides & resources
+- Helps users adapt to local environment
+
+---
+
+## 🛠 Technology Stack
+
+### Frontend
+
+- React.js
+- HTML / CSS / JavaScript
+
+### Backend
+
+- Python
+- Flask
+- Flask-SQLAlchemy
+- Flask-CORS
+- Werkzeug Security
+
+### Database
+
+- PostgreSQL
+
+---
+
+## ⚙️ Backend Setup
+
+Update database configuration inside `Backend/app.py`:
+
+```python
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@localhost/simigra_db'
+```
+
+Ensure PostgreSQL is running before starting the backend server.
+
+---
+
+## ▶️ Running the Application
+
+### ✅ Prerequisites
+
+Make sure you have installed:
+
+- Python 3.x
+- Node.js & npm
+- PostgreSQL / pgAdmin
+
+---
+
+### 1️⃣ Start PostgreSQL
+
+Launch PostgreSQL service using pgAdmin or system services.
+
+---
+
+### 2️⃣ Run Backend Server
+
+```bash
+cd Backend
+python app.py
+```
+
+Backend runs at:
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+### 3️⃣ Run Frontend (React)
+
+Open a new terminal:
+
+```bash
+cd Frontend
+npm run start
+```
+
+Frontend runs at:
+
+```
+http://localhost:3000/
+```
+
+---
+
+## 🔌 API Endpoints
+
+| Endpoint                       | Method | Description              |
+| ------------------------------ | ------ | ------------------------ |
+| `/api/signup`                  | POST   | Create user account      |
+| `/api/login`                   | POST   | Authenticate user        |
+| `/api/user/<id>`               | GET    | Retrieve user profile    |
+| `/api/user/<id>`               | PUT    | Update user profile      |
+| `/api/jobs?city=XYZ`           | GET    | Fetch jobs by city       |
+| `/api/accommodations?city=XYZ` | GET    | Fetch accommodations     |
+| `/api/food?city=XYZ`           | GET    | Fetch food services      |
+| `/api/transport?city=XYZ`      | GET    | Fetch transport options  |
+| `/api/culture?city=XYZ`        | GET    | Fetch cultural resources |
+
+---
+
+## 🔐 Security
+
+- Password hashing using Werkzeug
+- Unique email constraint
+- ORM-based database queries
+- CORS enabled for frontend communication
+
+---
+
+## ❤️ Acknowledgement
+
+SIMIGRA aims to simplify migration planning and reduce uncertainty for individuals relocating to new cities.
+
+---
